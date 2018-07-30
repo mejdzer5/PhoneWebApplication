@@ -59,6 +59,7 @@ public class SaveRepair extends HttpServlet {
             HttpSession session = request.getSession();
             
             out.println("<!DOCTYPE html>");
+            
             out.println("<html>");
             out.println("<head>");
             out.println("<title>Servlet SaveRepair</title>");            
