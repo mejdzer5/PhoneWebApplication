@@ -95,6 +95,7 @@ public class ServisPhoneFormServlet extends HttpServlet {
             out.println("pokazDane phonesphones"+phone.pokazPhonesDane());
             out.println("pokazDane REPAIR"+repair.pokazRepairDane());
             out.println("pokazDane CUST"+customer.pokazCustomersDane());
+            out.println("POKAZ DANE SERVICES"+services.pokazServicesDane());
             myPhones = phone.getPhones();
             myRepairs = repair.getRapairs();
             myCustomers = customer.getCustomers();
@@ -108,6 +109,7 @@ public class ServisPhoneFormServlet extends HttpServlet {
             out.println(myPhones);
             out.println(myRepairs);
             out.println(myCustomers);
+            out.println(myServices);
             
             Iterator myIt = phone.getPhones().iterator();
             while(myIt.hasNext()){
@@ -216,9 +218,9 @@ public class ServisPhoneFormServlet extends HttpServlet {
             out.println("<input type='hidden' name='repid' value='"+id2+"'/>");
             out.println("Rodzaj usterki : <select name='repair_type'>");
             out.println("<option value='Gwarancja'>Gwarancja</option>");
-            out.println("<option value='Niezgodnosc z umowa'>Niezgodnosc z umowa</option>");
-            out.println("<option value='Pograwarancyjna'>Pogwarancyjna</option>");
-            out.println("<option value='Przedgrawarancyjna'>Przedgwarancyjna</option>");
+            out.println("<option value='Niezgodnosc'>Niezgodnosc</option>");
+            out.println("<option value='Pogwarancyjna'>Pogwarancyjna</option>");
+            out.println("<option value='Przedgwarancyjna'>Przedgwarancyjna</option>");
             out.println("</select><br/>");
             out.println("<textarea name='description' cols='50' rows='5'>Opis usterki...</textarea><br/>");
             

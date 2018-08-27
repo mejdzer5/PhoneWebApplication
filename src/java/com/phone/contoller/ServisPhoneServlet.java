@@ -9,6 +9,7 @@ import com.phone.model.CustomerDao;
 import com.phone.model.Phone;
 import com.phone.model.PhoneDao;
 import com.phone.model.RepairDao;
+import com.phone.model.ServicesDao;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
@@ -50,6 +51,7 @@ public class ServisPhoneServlet extends HttpServlet {
         PhoneDao phone = new PhoneDao();
         CustomerDao customer = new CustomerDao();
         RepairDao repair = new RepairDao();
+        ServicesDao services = new ServicesDao();
         
         SimpleDateFormat today = new SimpleDateFormat("yyyy-MM-dd");
         SimpleDateFormat sale = new SimpleDateFormat("yyyy-MM-dd");
@@ -74,6 +76,7 @@ public class ServisPhoneServlet extends HttpServlet {
             out.println("phoneservis "+phone.initDB());
             out.println("<br/>REPAIR"+repair.initDB());
             out.println("<br/>CUST"+customer.initDB());
+            out.println("<br/>SERVICES!!!!!!!!!!!"+services.initDB());
             phone.pokazPhonesDane();
             
             // Porabranie danych telefonu z formularza
@@ -199,7 +202,9 @@ public class ServisPhoneServlet extends HttpServlet {
             
             out.println(update3);
             
-            String id4 = request.getParameter("servid");        //servis id pobrane
+            String id4 = request.getParameter("servid");   //servis id pobrane
+            out.println("SERVIS ID!!!!!!!!!!!!!!!!   "+id4);
+            
             
             out.println("<form action='save_repair.do' method='POST'>");
             
