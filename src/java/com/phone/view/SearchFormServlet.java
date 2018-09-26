@@ -40,6 +40,7 @@ public class SearchFormServlet extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet SearchFormServlet at " + request.getContextPath() + "</h1>");
             out.println("<hr/>");
+            out.println("blablabla");
             out.println("Wyszukaj IMEI");
             out.println("<form action='search.do' method='POST'>");
             out.println("Podaj Imei : <input type='text' name='search_imei' value='imei' />");
