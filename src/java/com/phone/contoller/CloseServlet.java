@@ -46,7 +46,7 @@ public class CloseServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet CloseServlet</title>");            
+            out.println("<title>Servlet CloseServlet!!!</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet CloseServlet at " + request.getContextPath() + "</h1>");
