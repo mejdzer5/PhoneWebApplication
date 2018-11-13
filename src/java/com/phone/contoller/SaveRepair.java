@@ -67,7 +67,7 @@ public class SaveRepair extends HttpServlet {
             out.println("<body>");
             out.println("<h1>Servlet SaveRepair at " + request.getContextPath() + "</h1>");
             
-            out.println("pobieram dane... bla bla...NEW COMMIT</br>");
+            out.println("pobieram dane... bla bla...   NEW COMMIT</br>");
             
             String phoneId = request.getParameter("phoneid");
             try{
