@@ -41,7 +41,7 @@ public class LogOutServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet LogOutServlet</title>");            
+            out.println("<title>Servlet LogOutServlet!!!</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet LogOutServlet at " + request.getContextPath() + "</h1>");
