@@ -7,7 +7,7 @@ package com.phone.model;
 
 /**
  *
- * @author User
+ * @author 
  */
 public class Customer {
     
