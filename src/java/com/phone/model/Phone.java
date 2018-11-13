@@ -9,7 +9,7 @@ import java.util.Date;
 
 /**
  *
- * @author User
+ * @author 
  */
 public class Phone {
     
