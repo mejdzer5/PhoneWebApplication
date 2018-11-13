@@ -17,7 +17,7 @@ import org.hsqldb.jdbcDriver;
 
 /**
  *
- * @author User
+ * @author 
  */
 public class ServicesDao {
     
