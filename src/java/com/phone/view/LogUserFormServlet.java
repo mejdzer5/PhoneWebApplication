@@ -58,6 +58,8 @@ public class LogUserFormServlet extends HttpServlet {
             out.println("Jesteś zalogowany jako : "+session.getAttribute("login"));
             
             out.println("<br/><a href='log_out.do'>Wyloguj</a>");
+            
+            out.println("<a href='log_user_servlet.do'>Menu</a>");
             }
             else{
             
