@@ -247,6 +247,8 @@ public class ServisPhoneFormServlet extends HttpServlet {
             out.println("  <input type='Submit' value='Wyślij' />");
             out.println("</form>");
             
+            out.println("<a href='log_user_servlet.do'>wróć do menu</a>");
+            
             out.println("</body>");
             out.println("</html>");
         } catch (ClassNotFoundException ex) {
