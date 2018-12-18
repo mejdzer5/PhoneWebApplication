@@ -248,6 +248,7 @@ public class ServisPhoneFormServlet extends HttpServlet {
             out.println("</form>");
             
             out.println("<a href='log_user_servlet.do'>wróć do menu</a>");
+            out.println("<br/><a href='index.html'>Home</a>");
             
             out.println("</body>");
             out.println("</html>");
