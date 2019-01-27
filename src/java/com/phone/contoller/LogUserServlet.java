@@ -63,23 +63,30 @@ public class LogUserServlet extends HttpServlet {
             
             List<PhoneUsers> myUsers = phoneUser.getUsers();
             
-            out.println("początek!!!");
+            //out.println("początek!!!");
             
-            out.println("usersi!!");
+            //out.println("usersi!!");
             out.println(phoneUser.initDB());
             out.println(phoneUser.pokazUserDane());
             
             out.println("attrybuty!!!");
-            out.println(login);
-            out.println(password);
+            out.println(login+"to to");
+            out.println(password+"to to");
             
-            out.println("cos jeszcze!!!");
-            out.println(myUsers);
+            out.println("login : "+session.getAttribute("login"));
+            if(login == null && password == null){
+                login = session.getAttribute("login").toString();
+                password = session.getAttribute("password").toString();
+                out.println("działa!!!");
+            }
+           // out.println("cos jeszcze!!!");
+           // out.println(myUsers);
             
             out.println("size!!!");
             int usersSize = myUsers.size();
             
             out.println(usersSize);
+            out.println(login);
             
             for(PhoneUsers phu: myUsers){
                 out.println(phu.getLogin());
