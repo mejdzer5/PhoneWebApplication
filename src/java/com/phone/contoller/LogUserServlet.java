@@ -57,7 +57,7 @@ public class LogUserServlet extends HttpServlet {
             
             HttpSession session = request.getSession();
             
-            // Porabranie danych z formularza
+            //Porabranie danych z formularza
             String login = request.getParameter("login");
             String password = request.getParameter("password");
             
