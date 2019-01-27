@@ -45,6 +45,8 @@ public class SearchFormServlet extends HttpServlet {
             out.println("<form action='search.do' method='POST'>");
             out.println("Podaj Imei : <input type='text' name='search_imei' value='imei' />");
             out.println("<input type='submit' value='szukaj' />");
+            out.println("<br/><a href='log_user_servlet.do'>wróć do menu</a>");
+            out.println("<br/><a href='index.html'>Home</a>");
             out.println("</form>");
             out.println("</body>");
             out.println("</html>");
