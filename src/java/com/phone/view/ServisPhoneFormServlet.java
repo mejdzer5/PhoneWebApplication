@@ -26,6 +26,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -52,6 +53,8 @@ public class ServisPhoneFormServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        
+        HttpSession session = request.getSession();
         
         PhoneDao phone = new PhoneDao();
         CustomerDao customer = new CustomerDao();
@@ -151,6 +154,9 @@ public class ServisPhoneFormServlet extends HttpServlet {
                 Services sv = (Services)myIt4.next();
                 id4 = sv.getId();
             }
+            
+            out.println(session.getAttribute("login"));
+            session.getAttribute("password");
             
             out.println("Services ID :"+id4+"<br/>");
             
